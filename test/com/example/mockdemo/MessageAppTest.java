@@ -21,7 +21,6 @@ public class MessageAppTest {
 		InvocationHandler ih = new MassageServiceHandler();
 		MessageService ms = (MessageService)Proxy.newProxyInstance(
 				MessageService.class.getClassLoader(), new Class[]{ MessageService.class}, ih);
-				
 		
 		MessageApp mapp = new MessageApp(ms);	
 		
